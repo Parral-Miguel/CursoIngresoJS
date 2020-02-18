@@ -40,14 +40,8 @@ function piedra()
 			ContadorDePerdidas = ContadorDePerdidas + 1;
             break;
 	}
-	console.log(ContadorDeEmpates);
-	console.log(ContadorDePerdidas);
-	console.log(ContadorDeGanadas);
-	document.getElementById("perdidas").value = ContadorDePerdidas;
-	document.getElementById("ganadas").value = ContadorDeGanadas;
-	document.getElementById("empatadas").value = ContadorDeEmpates;
-    alert(resultado);
-
+	alert(resultado);
+	mostrarResultado();
 }//FIN DE LA FUNCIÓN
 function papel()
 {
@@ -66,13 +60,8 @@ function papel()
 			break;
 			
 	}
-	console.log(ContadorDeEmpates);
-	console.log(ContadorDePerdidas);
-	console.log(ContadorDeGanadas);
-	document.getElementById("perdidas").value = ContadorDePerdidas;
-	document.getElementById("ganadas").value = ContadorDeGanadas;
-	document.getElementById("empatadas").value = ContadorDeEmpates;
-    alert(resultado);
+	alert(resultado);
+	mostrarResultado();
 }//FIN DE LA FUNCIÓN
 function tijera()
 {
@@ -91,15 +80,13 @@ function tijera()
             break;
     }
 	alert(resultado);
-	console.log(ContadorDeEmpates);
-	console.log(ContadorDePerdidas);
-	console.log(ContadorDeGanadas);
-	document.getElementById("perdidas").value = ContadorDePerdidas;
-	document.getElementById("ganadas").value = ContadorDeGanadas;
-	document.getElementById("empatadas").value = ContadorDeEmpates;
+	mostrarResultado();
 }//FIN DE LA FUNCIÓN
 
 function mostrarResultado()
-{
-	
+{	
+	comenzar();
+	document.getElementById("perdidas").value = "Perdio " + ContadorDePerdidas;
+	document.getElementById("ganadas").value = "Gano " + ContadorDeGanadas;
+	document.getElementById("empatadas").value = "Empato " + ContadorDeEmpates;
 }

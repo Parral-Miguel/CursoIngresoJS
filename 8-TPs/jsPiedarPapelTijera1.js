@@ -40,7 +40,8 @@ function piedra()
             break;
     }
     alert(resultado);
-
+    comenzar();
+    
 }//FIN DE LA FUNCIÓN
 function papel()
 {
@@ -56,6 +57,7 @@ function papel()
             break;
     }
     alert(resultado);
+    comenzar();
 
 }//FIN DE LA FUNCIÓN
 function tijera()
@@ -72,5 +74,6 @@ function tijera()
             break;
     }
     alert(resultado);
+    comenzar();
 
 }//FIN DE LA FUNCIÓN
