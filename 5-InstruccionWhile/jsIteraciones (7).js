@@ -3,22 +3,19 @@ function mostrar()
 
 	var contador=0;
 	var acumulador=0;
-	var respuesta='si';
 	var recopilador=0;
 
-	while (isNaN(recopilador)) {
-		contador++;
+	while (true) {
 		recopilador = prompt("Ingrese los valores a promediar");
 		recopilador = parseInt(recopilador);
+
 		if (isNaN(recopilador)) {
 			break;
 		}
 		
+		contador++;
 		acumulador = acumulador + recopilador;
 		console.log (recopilador);
-		if (contador == 4) {
-			break;
-		}
 	}
 	console.log (recopilador);
 	promedio = acumulador / contador
