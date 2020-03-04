@@ -9,5 +9,12 @@
 */
 function mostrar()
 {
+    var numero;
+    var letra;
+    
+    do {
 
+
+        respuesta = confirm("Desea continuar ingresando?")
+    } while (respuesta)
 }
